@@ -1,0 +1,21 @@
+<div class="header">
+  <mat-icon class="header__back" (click)="goBack()">arrow_back</mat-icon>
+  <div class="header__title">Photos Of Album {{ id }}</div>
+</div>
+<div class="photoList">
+  <mat-card class="photoList__card" *ngFor="let photo of photoList">
+    <mat-card-header>
+      <img mat-card-avatar src="{{ photo.thumbnailUrl }}" />
+      <mat-card-title class="photoList__card--title">{{
+        photo.title
+      }}</mat-card-title>
+      <mat-card-subtitle>
+        <div>
+          <mat-icon class="photoList__card--icon">person</mat-icon>
+          Huu Tuong
+        </div>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ photo.url }}" />
+  </mat-card>
+</div>

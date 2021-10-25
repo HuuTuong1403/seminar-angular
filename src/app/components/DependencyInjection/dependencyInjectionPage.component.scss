@@ -1,0 +1,32 @@
+.albumList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 20px;
+
+  &__card {
+    flex: 0 0 25%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #5d677a;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    font-size: 18px;
+
+    &:hover {
+      color: #f79d25;
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="albumList">
+  <div class="albumList__card" *ngFor="let item of albumList; index as i">
+    <a class="albumList__link" routerLink="/dependency-injection/{{ item.id }}"
+      >Album Photo {{ i + 1 }}</a
+    >
+    <div class="albumList__title">{{ item.title }}</div>
+  </div>
+</div>

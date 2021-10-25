@@ -1,0 +1,40 @@
+.directive {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &__left {
+    flex: 0 0 83%;
+    &--item {
+      margin-bottom: 20px;
+    }
+  }
+  &__right {
+    flex: 0 0 15%;
+
+    & > div {
+      top: 35px;
+      position: sticky;
+      padding: 5px 0 10px 10px;
+      border-left: 4px solid #3f51b5;
+
+      & > div {
+        line-height: 16px;
+        margin: 8px 0 0;
+        position: relative;
+        text-decoration: none;
+        display: block;
+        text-overflow: ellipsis;
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        color: #c4c1c1;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

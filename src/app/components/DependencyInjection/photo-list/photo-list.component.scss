@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &__back {
+    cursor: pointer;
+    color: #5d677a;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+    vertical-align: middle;
+
+    &:hover {
+      color: #f79d25;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.photoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+
+  &__card {
+    flex: 0 0 45%;
+
+    &--title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 400px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        max-width: max-content;
+        overflow: unset;
+        white-space: pre-wrap;
+      }
+    }
+
+    &--icon {
+      font-size: 20px;
+      vertical-align: middle;
+    }
+  }
+}

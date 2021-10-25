@@ -1,0 +1,56 @@
+.slide-nav {
+  height: 100vh;
+}
+
+.slide-drawer {
+  width: 200px;
+
+  &__list {
+    &--link-active {
+      background: rgba(63, 81, 181, 0.15) !important;
+      color: #3f51b5 !important;
+
+      &:hover {
+        background: rgba(63, 81, 181, 0.3) !important;
+      }
+    }
+
+    &--link {
+      width: 100%;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.54);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.87);
+        background: rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+}
+
+.slide-content {
+  &__header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    &--menu {
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    &--title {
+      flex: 0 0 95%;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+
+  &__body {
+    padding: 30px;
+  }
+}
