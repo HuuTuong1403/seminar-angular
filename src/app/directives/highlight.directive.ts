@@ -33,7 +33,7 @@ export class HighlightDirective implements OnChanges {
     }
     const { currentValue } = changes.highlightText;
     if (currentValue) {
-      const regExp = new RegExp(`(${currentValue})`, 'ig');
+      const regExp = new RegExp(`(${currentValue})`, 'gi');
       this.el.nativeElement.innerHTML = this.originalHTML.replace(
         regExp,
         `<span style="background-color: ${this.highlightColor}">\$1</span>`
