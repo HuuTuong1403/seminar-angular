@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DirectivesPage } from './components/Directives/directivesPage.component';
 import { DependencyInjectionPage } from './components/DependencyInjection/dependencyInjectionPage.component';
-import { AnimationsPage } from './components/Animations/animationsPage.component';
 import { PhotoListComponent } from './components/DependencyInjection/photo-list/photo-list.component';
 const routes: Routes = [
   {
@@ -23,13 +22,6 @@ const routes: Routes = [
   {
     path: 'dependency-injection/:id',
     component: PhotoListComponent,
-  },
-  {
-    path: 'animations',
-    component: AnimationsPage,
-    data: {
-      animation: 'AnimationsPage',
-    },
   },
   { path: '', pathMatch: 'full', redirectTo: '/directives' },
 ];

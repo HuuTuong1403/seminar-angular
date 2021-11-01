@@ -8,11 +8,9 @@ import { ROUTE_ANIMATION } from './constants/animation';
   animations: [ROUTE_ANIMATION],
 })
 export class AppComponent {
-  // @ViewChild(RouterOutlet) routerOutlet: any;
-  // this.routerOutlet &&
-  //     this.routerOutlet.activatedRouteData &&
-  //     this.outlet.activatedRouteData.transitionState
-  getRouteAnimationState(outlet: RouterOutlet) {
-    return outlet?.activatedRouteData?.animation;
+  @ViewChild(RouterOutlet) routerOutlet!: RouterOutlet;
+
+  getRouteAnimationState() {
+    return this.routerOutlet?.activatedRouteData?.animation;
   }
 }

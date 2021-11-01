@@ -6,8 +6,10 @@ import { Album, Photo } from 'src/app/components/DependencyInjection/type';
 @Injectable({
   providedIn: 'root',
 })
+
 export class AlbumService {
   private url = 'https://jsonplaceholder.typicode.com';
+
   constructor(private http: HttpClient, private loggerService: LoggerService) {}
 
   getAlbums(): Observable<Album[]> {

@@ -11,6 +11,7 @@ export class IfNotDirective {
       this.viewContainerRef.clear();
     }
   }
+  
   constructor(
     private templateRef: TemplateRef<any>,
     private viewContainerRef: ViewContainerRef
